@@ -12,15 +12,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-BOARD_VENDOR := htc
+BOARD_VENDOR := xiaomi
 
-TARGET_SPECIFIC_HEADER_PATH := device/htc/msm8660-common/include
+TARGET_SPECIFIC_HEADER_PATH := device/xiaomi/msm8660-common/include
 
 # Bootloader
 TARGET_NO_BOOTLOADER := true
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/htc/msm8660
+TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8660
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8660
@@ -29,6 +29,7 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno200
 # Architecture
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
+TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_SMP := true
 ARCH_ARM_HAVE_TLS_REGISTER := true
@@ -40,7 +41,7 @@ COMMON_GLOBAL_CFLAGS += -DQCOM_HARDWARE
 BOARD_USES_QCOM_HARDWARE := true
 
 # Audio
-COMMON_GLOBAL_CFLAGS += -DHTC_ACOUSTIC_AUDIO -DLEGACY_QCOM_VOICE
+COMMON_GLOBAL_CFLAGS += -DLEGACY_QCOM_VOICE
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
@@ -48,7 +49,6 @@ BOARD_HAVE_BLUETOOTH := true
 # Camera
 CAMERA_USES_SURFACEFLINGER_CLIENT_STUB := true
 COMMON_GLOBAL_CFLAGS += -DICS_CAMERA_BLOB -DNO_UPDATE_PREVIEW
-BOARD_HAVE_HTC_FFC := true
 BOARD_NEEDS_MEMORYHEAPPMEM := true
 TARGET_DISABLE_ARM_PIE := true
 
@@ -68,10 +68,7 @@ COMMON_GLOBAL_CFLAGS += -DQCOM_NO_SECURE_PLAYBACK
 USE_OPENGL_RENDERER := true
 TARGET_NO_HW_VSYNC := true
 TARGET_USES_C2D_COMPOSITION := true
-BOARD_EGL_CFG := device/htc/msm8660-common/configs/egl.cfg
-
-# Lights
-TARGET_PROVIDES_LIBLIGHTS := true
+BOARD_EGL_CFG := device/xiaomi/msm8660-common/configs/egl.cfg
 
 # Webkit
 ENABLE_WEBGL := true
