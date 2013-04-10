@@ -60,15 +60,18 @@ PRODUCT_PACKAGES += \
 
 # OMX
 PRODUCT_PACKAGES += \
+    libc2dcolorconvert \
     libdivxdrmdecrypt \
-    libI420colorconvert \
     libmm-omxcore \
     libOmxCore \
     libOmxVdec \
     libOmxVenc \
     libOmxAacEnc \
     libOmxAmrEnc \
-    libstagefrighthw
+    libstagefrighthw \
+    libOmxQcelp13Enc \
+    libOmxEvrcEnc \
+    libOmxAmrEnc
 
 # HDMI
 PRODUCT_PACKAGES += \
@@ -86,6 +89,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     make_ext4fs \
     setup_fs
+
+# Camera wrapper
+PRODUCT_PACKAGES += \
+    camera.default
 
 # Media configuration
 PRODUCT_COPY_FILES += \
