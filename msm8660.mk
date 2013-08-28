@@ -43,10 +43,6 @@ PRODUCT_PACKAGES += \
     audio.primary.msm8660 \
     libaudioutils
 
-# GPS
-PRODUCT_COPY_FILES += \
-    device/common/gps/gps.conf_US_SUPL:system/etc/gps.conf
-
 # Graphics
 PRODUCT_PACKAGES += \
     copybit.msm8660 \
@@ -68,7 +64,6 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libOmxAacEnc \
-    libOmxAmrEnc \
     libstagefrighthw \
     libOmxQcelp13Enc \
     libOmxEvrcEnc \
