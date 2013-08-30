@@ -89,6 +89,10 @@
 #define AUDIO_SET_BUF_CFG _IOW(AUDIO_IOCTL_MAGIC, 94, struct msm_audio_buf_cfg)
 #define AUDIO_SET_ACDB_BLK _IOW(AUDIO_IOCTL_MAGIC, 95, struct msm_acdb_cmd_device)
 #define AUDIO_GET_ACDB_BLK _IOW(AUDIO_IOCTL_MAGIC, 96, struct msm_acdb_cmd_device)
+
+#define AUDIO_REGISTER_ION _IOW(AUDIO_IOCTL_MAGIC, 97, unsigned)
+#define AUDIO_DEREGISTER_ION _IOW(AUDIO_IOCTL_MAGIC, 98, unsigned)
+
 #define AUDIO_MAX_COMMON_IOCTL_NUM 100
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
 #define HANDSET_MIC 0x01
@@ -163,6 +167,12 @@ struct msm_audio_stats {
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
  uint32_t unused[2];
 };
+
+struct msm_audio_ion_info {
+	int fd;
+	void *vaddr;
+};
+
 struct msm_audio_pmem_info {
  int fd;
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
