@@ -99,7 +99,7 @@ PRODUCT_COPY_FILES += \
 
 # audio policy
 PRODUCT_COPY_FILES += \
-    device/htc/msm8660-common/configs/audio_policy.conf:system/etc/audio_policy.conf
+    device/xiaomi/msm8660-common/configs/audio_policy.conf:system/etc/audio_policy.conf
 
 # MSM8660 firmware
 PRODUCT_COPY_FILES += \
