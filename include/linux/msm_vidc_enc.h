@@ -351,7 +351,9 @@ struct venc_capability{
 };
 struct venc_entropycfg{
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
- unsigned longentropysel;
+ // a space is missing after long, but prebuild kernel is the only choise for mione, so keep this member as unsigned
+ //unsigned longentropysel;
+ unsigned entropysel;
  unsigned long cabacmodel;
 };
 struct venc_dbcfg{
