@@ -89,7 +89,7 @@ PRODUCT_PACKAGES += \
 
 # Camera wrapper
 PRODUCT_PACKAGES += \
-    camera.default
+    camera.msm8660
 
 # Media configuration
 PRODUCT_COPY_FILES += \
