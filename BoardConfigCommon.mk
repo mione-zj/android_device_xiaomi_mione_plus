@@ -20,7 +20,7 @@ TARGET_SPECIFIC_HEADER_PATH := device/xiaomi/msm8660-common/include
 TARGET_NO_BOOTLOADER := true
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8660
+TARGET_KERNEL_SOURCE := kernel/xiaomi/mione_plus
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8660
