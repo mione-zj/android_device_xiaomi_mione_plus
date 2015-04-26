@@ -79,10 +79,17 @@ PRODUCT_COPY_FILES += \
     device/xiaomi/mione_plus/configs/mxt224_ts_input.idc:system/usr/idc/mxt224_ts_input.idc \
     device/xiaomi/mione_plus/configs/mxt224_ts_input.idc:system/usr/idc/mXT-touch.idc
 
+ifeq ($(TARGET_PREBUILT_KERNEL),)
+	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
+endif
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_KERNEL):kernel
+
 # Kernel modules
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 PRODUCT_COPY_FILES += $(shell \
-    find device/xiaomi/mione_plus/prebuilt -name '*.ko' \
+    find device/xiaomi/mione_plus/modules -name '*.ko' \
     | sed -r 's/^\/?(.*\/)([^/ ]+)$$/\1\2:system\/lib\/modules\/\2/' \
     | tr '\n' ' ')
 endif

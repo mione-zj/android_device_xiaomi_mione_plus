@@ -39,7 +39,7 @@ BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=mione kgs
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01200000
 TARGET_KERNEL_CONFIG := mione-user_defconfig
-TARGET_PREBUILT_KERNEL := device/xiaomi/mione_plus/prebuilt/kernel
+TARGET_PREBUILT_KERNEL := device/xiaomi/mione_plus/kernel
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR ?= device/xiaomi/mione_plus/bluetooth
