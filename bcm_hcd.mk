@@ -1,4 +1,4 @@
-# Copyright (C) 2010 The Android Open Source Project
+# Copyright (C) 2012 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,8 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := $(call my-dir)
-
-ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),mione)
-include $(call all-makefiles-under,$(LOCAL_PATH))
-endif
+# Copy Bluetooth firmware, since BCM4329 is a BT/WiFi chip
+PRODUCT_COPY_FILES += \
+    device/xiaomi/msm8660-common/firmware/bcm4330.hcd:system/vendor/firmware/bcm4330.hcd \
+    device/xiaomi/msm8660-common/firmware/bcm4329.hcd:system/vendor/firmware/bcm4329.hcd

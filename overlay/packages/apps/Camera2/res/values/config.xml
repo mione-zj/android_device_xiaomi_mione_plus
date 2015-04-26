@@ -22,6 +22,9 @@
          This option doesn't make sense if wantsFocusModes is on -->
     <bool name="useContinuosFocusForTouch">true</bool>
 
+    <!-- Ignore bogus preferred preview size -->
+    <bool name="ignorePreferredPreviewSizeForVideo">true</bool>
+
     <!-- Allow HDR and ZSL together -->
     <bool name="enableHDRWithZSL">true</bool>
 </resources>
