@@ -76,12 +76,7 @@ service mpdecision /system/bin/mpdecision --no_sleep --avg_comp
     user root
     disabled
 
-service qosmgrd /system/bin/qosmgr /system/etc/qosmgr_rules.xml
-    user system
-    group system
-    disabled
-
-service thermald /system/bin/thermald --norestorebrightness
+service thermald /system/bin/thermald
     class late_start
     user root
     group root
@@ -100,5 +95,6 @@ on property:ro.baseband=svlte2a
     setprop ro.ril.svlte1x true
 
 on property:sys.radio.shutdown=true
-    exec /system/bin/sh /system/etc/init.qcom.efs.sync.sh
-
+   exec /system/bin/sh /system/etc/init.qcom.efs.sync.sh
+   user root
+   group root

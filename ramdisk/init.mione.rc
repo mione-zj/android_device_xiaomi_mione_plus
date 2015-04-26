@@ -7,7 +7,7 @@
 
 import init.qcom.rc
 
-# most of the following are from boot.img of mioneplus_QDS81
+# most of the following are from boot.img of MI-ONE Plus miui-v5
 
 on init
     export EXTERNAL_STORAGE /storage/sdcard0
