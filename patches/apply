@@ -1,0 +1,11 @@
+#!/bin/sh
+#
+
+dir=`cd $(dirname $0) && pwd`
+top=$dir/../../../..
+
+for patch in `ls $dir/*.patch` ; do
+	echo ""
+	echo "\033[31m==> patch file: ${patch##*/}\033[0m"
+	patch -p1 -N -i $patch -r - -d $top
+done

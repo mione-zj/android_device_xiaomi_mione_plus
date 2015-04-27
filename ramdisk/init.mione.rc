@@ -64,9 +64,6 @@ on post-fs-data
 # InputMethodManagerService
     mkdir /data/system/inputmethod 0755 system system
 
-    # no selinux
-    stop auditd
-
 service fuse_sdcard0 /system/bin/sdcard -u 1023 -g 1023 -d /mnt/media_rw/sdcard0 /storage/sdcard0
     oneshot
     disabled
