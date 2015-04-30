@@ -92,6 +92,7 @@ BOARD_UMS_LUNFILE := "/sys/class/android_usb/android0/f_mass_storage/lun/file"
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/class/android_usb/android0/f_mass_storage/lun/file"
 TARGET_RECOVERY_FSTAB := device/xiaomi/mione_plus/ramdisk/fstab.mione
 RECOVERY_FSTAB_VERSION := 2
+DEVICE_RESOLUTION := 480x854
 
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true

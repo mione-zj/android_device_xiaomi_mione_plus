@@ -1,10 +1,10 @@
 
 project packages/providers/MediaProvider/
 diff --git a/packages/providers/MediaProvider/src/com/android/providers/media/MediaProvider.java b/packages/providers/MediaProvider/src/com/android/providers/media/MediaProvider.java
-index 3b152ae..5bc0d75 100755
+index 3349ddb..24f76ae 100755
 --- a/packages/providers/MediaProvider/src/com/android/providers/media/MediaProvider.java
 +++ b/packages/providers/MediaProvider/src/com/android/providers/media/MediaProvider.java
-@@ -5327,29 +5327,6 @@ public class MediaProvider extends ContentProvider {
+@@ -5257,29 +5257,6 @@ public class MediaProvider extends ContentProvider {
                          Log.e(TAG, "UUID: " + volumeId);
                      }
  

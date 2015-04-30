@@ -6,21 +6,21 @@ PRODUCT_RELEASE_NAME := mione_plus
 TARGET_SCREEN_HEIGHT := 854
 TARGET_SCREEN_WIDTH := 480
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common OMNI stuff.
+$(call inherit-product, vendor/omni/config/common.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/mione_plus/device_mione_plus.mk)
 
 # Setup device specific product configuration.
 PRODUCT_DEVICE := mione_plus
-PRODUCT_NAME := cm_mione_plus
+PRODUCT_NAME := omni_mione_plus
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI-ONE Plus
 PRODUCT_MANUFACTURER := Xiaomi
 
-# CM_BUILDTYPE
-CM_BUILDTYPE := NIGHTLY
+# ROM_BUILDTYPE
+ROM_BUILDTYPE := NIGHTLY
 
 # Set build fingerprint / ID / Product Name etc.
 PRODUCT_BUILD_PROP_OVERRIDES += \

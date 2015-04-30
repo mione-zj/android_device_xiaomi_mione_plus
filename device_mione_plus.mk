@@ -83,9 +83,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     hdmid
 
-# Torch
+# OmniTorch
 PRODUCT_PACKAGES += \
-    Torch
+    OmniTorch
 
 # USB
 PRODUCT_PACKAGES += \
