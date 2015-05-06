@@ -1,6 +1,5 @@
 # patches needed to build a flashable ROM for xiaomi mione
 
-* `audio-caf-build-error.patch`: fix a build error in hardware/qcom/audio-caf/
 * `MediaProvider.patch`    : optional
 * `xiaomi_mione_wifi.patch`: needed to make wifi working on all mione
 
