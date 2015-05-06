@@ -1,6 +1,5 @@
 # patches needed to build a flashable ROM for xiaomi mione
 
-* `audio-caf-build-error.patch`: fix a build error in hardware/qcom/audio-caf/
 * `MediaProvider.patch`    : optional
 * `no_selinux.patch`       : mione doesn't support SeLinux yet
 * `xiaomi_mione_wifi.patch`: needed to make wifi working on all mione
