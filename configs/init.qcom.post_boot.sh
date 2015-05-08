@@ -75,10 +75,6 @@ case "$target" in
          echo "918000" > /sys/devices/system/cpu/cpufreq/interactive/hispeed_freq
 	 echo 192000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
 	 echo 192000 > /sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq
-	 chown system /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
-	 chown system /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
-	 chown system /sys/devices/system/cpu/cpu1/cpufreq/scaling_max_freq
-	 chown system /sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq
          chown system.system /sys/devices/system/cpu/cpufreq/interactive/boostpulse
 	 chown root.system /sys/devices/system/cpu/mfreq
 	 chmod 220 /sys/devices/system/cpu/mfreq
@@ -118,14 +114,6 @@ case "$target" in
          echo 384000 > /sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq
          echo 384000 > /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq
          echo 384000 > /sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq
-         chown system /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
-         chown system /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
-         chown system /sys/devices/system/cpu/cpu1/cpufreq/scaling_max_freq
-         chown system /sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq
-         chown system /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq
-         chown system /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq
-         chown system /sys/devices/system/cpu/cpu3/cpufreq/scaling_max_freq
-         chown system /sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq
          chown root.system /sys/devices/system/cpu/mfreq
          chmod 220 /sys/devices/system/cpu/mfreq
          chown root.system /sys/devices/system/cpu/cpu1/online
