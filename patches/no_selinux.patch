@@ -13,10 +13,9 @@ index 33c9918..11e02ae 100644
      file_contexts \
      seapp_contexts \
 
-
 project vendor/cm/
 diff --git a/vendor/cm/config/common.mk b/vendor/cm/config/common.mk
-index 0cfd358..0261b67 100644
+index d6f67db..7785991 100644
 --- a/vendor/cm/config/common.mk
 +++ b/vendor/cm/config/common.mk
 @@ -63,9 +63,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
