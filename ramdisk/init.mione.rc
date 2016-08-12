@@ -40,10 +40,11 @@ on boot
 
     class_start late_start
 
+    exec /sbin/syspart_select auto
+
 on fs
 # mount mmc partitions
-    exec /sbin/dualboot_init ./fstab.mione
-    mount_all ./fstab.mione.patched
+    mount_all ./fstab.mione
     #Setting permissons for misc partition
     chmod 0666 /dev/block/platform/msm_sdcc.1/by-name/misc
 
