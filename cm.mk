@@ -5,6 +5,7 @@ PRODUCT_RELEASE_NAME := mione_plus
 # Boot animation
 TARGET_SCREEN_HEIGHT := 854
 TARGET_SCREEN_WIDTH := 480
+TARGET_BOOTANIMATION_HALF_RES := true
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
