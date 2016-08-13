@@ -93,6 +93,9 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/class/android_usb/android0/f_mass_stora
 TARGET_RECOVERY_FSTAB := device/xiaomi/mione_plus/ramdisk/fstab.mione
 RECOVERY_FSTAB_VERSION := 2
 
+# Fonts
+EXTENDED_FONT_FOOTPRINT := true
+
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
 COMMON_GLOBAL_CFLAGS += -DQCOM_HARDWARE
