@@ -68,8 +68,6 @@ MALLOC_IMPL := dlmalloc
 
 # RIL
 TARGET_RIL_VARIANT := caf
-BOARD_USES_HC_RADIO := true
-BOARD_USES_LEGACY_RIL := true
 
 # Misc
 BOARD_USES_LEGACY_MMAP := true
