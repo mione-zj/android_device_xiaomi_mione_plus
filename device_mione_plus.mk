@@ -53,6 +53,10 @@ PRODUCT_PACKAGES += \
     libaudio-resampler \
     libaudioutils
 
+# Charger
+PRODUCT_PACKAGES += \
+    charger_res_images
+
 # Graphics
 PRODUCT_PACKAGES += \
     copybit.msm8660 \
@@ -108,7 +112,6 @@ PRODUCT_COPY_FILES += \
     device/xiaomi/mione_plus/ramdisk/init.target.rc:root/init.target.rc \
     device/xiaomi/mione_plus/ramdisk/ueventd.mione.rc:root/ueventd.mione.rc \
     device/xiaomi/mione_plus/ramdisk/fstab.mione:root/fstab.mione \
-    device/xiaomi/mione_plus/ramdisk/sbin/chargeonlymode:root/sbin/chargeonlymode \
     device/xiaomi/mione_plus/recovery/init.recovery.mione.rc:root/init.recovery.mione.rc
 
 # wifi

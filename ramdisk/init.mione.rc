@@ -94,11 +94,6 @@ on charger
     write /sys/devices/system/cpu/cpu1/online 0
     setprop sys.usb.config adb
 
-
-service chargeonlymode /sbin/chargeonlymode
-    class charger
-
-
 on property:sys.mione.battlevel=low
     stop thermald
     write /sys/devices/system/cpu/cpu1/online 1
