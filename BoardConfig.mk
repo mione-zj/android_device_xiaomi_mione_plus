@@ -63,6 +63,9 @@ BOARD_BLUEDROID_VENDOR_CONF := device/xiaomi/mione_plus/bluetooth/vnd_mione_plus
 TARGET_SCREEN_WIDTH := 480
 TARGET_SCREEN_HEIGHT := 854
 
+# Bionic
+MALLOC_IMPL := dlmalloc
+
 # RIL
 TARGET_RIL_VARIANT := caf
 BOARD_USES_HC_RADIO := true
