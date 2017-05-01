@@ -36,9 +36,11 @@ PRODUCT_PACKAGES += \
 
 # Hostapd (Required for Wi-Fi)
 PRODUCT_PACKAGES += \
+    dhcpcd.conf \
     hostapd_cli \
     calibrator \
-    hostapd
+    hostapd \
+    wpa_supplicant
 
 PRODUCT_PACKAGES += \
     syspart_select
