@@ -86,6 +86,7 @@ BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
 
 # Use dlmalloc
 MALLOC_IMPL := dlmalloc
+TARGET_USES_LOGD := false
 
 # Recovery
 BOARD_RECOVERY_SWIPE := true
