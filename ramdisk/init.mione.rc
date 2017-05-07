@@ -56,15 +56,6 @@ on fs
     exec /system/bin/sh /system/etc/init.qcom.modem_links.sh
 
 on post-fs-data
-
-service rmt_storage /system/bin/rmt_storage
-    class core
-    user root
-    group system
-
-on property:ro.boot.emmc=true
-    start rmt_storage
-
 # double check /data/radio
     mkdir /data/radio 0770 radio radio
     chmod 2770 /data/radio
